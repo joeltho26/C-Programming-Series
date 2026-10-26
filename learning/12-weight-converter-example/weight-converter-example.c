@@ -23,10 +23,10 @@ int main() {
 
     printf("Enter your choice: ");
     while (scanf("%d", &choice) != 1 || (choice != 1 && choice != 0)) {
-    printf("Invalid option! Please enter your option...");
+        printf("Invalid option! Please enter your option...");
 
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
     };
  
     if (choice == 0) {
@@ -37,10 +37,10 @@ int main() {
     }
     
     while (scanf("%f", &weight) != 1) {
-    printf("Invalid input! Please enter your weight...");
+        printf("Invalid input! Please enter your weight...");
 
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
     };
 
     if (choice == 0) {

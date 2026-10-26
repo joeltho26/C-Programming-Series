@@ -32,5 +32,5 @@ int main(void) {
     else {
         printf("Neither a student nor online!\n");
     }
-    return 0;
+    return 0; // if the main function doesnt return 0 then it signifies that there is an error
 }
