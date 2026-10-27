@@ -21,6 +21,7 @@ bool validateNumber(float *num) {
         return false;
     }
     size_t len = strlen(buffer);
+    
     if (len > 0 && buffer[len-1] == '\n') {
         buffer[len-1] = '\0';
     } else {
@@ -35,6 +36,11 @@ bool validateNumber(float *num) {
 
     char *endptr;
     *num = strtod(buffer, &endptr);
+    // *num = abs(*num); 
+
+    if (*num <= 0) {
+        return false;
+    }
 
     if (*endptr == '\0') {
         return true;
